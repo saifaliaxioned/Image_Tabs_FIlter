@@ -7,7 +7,7 @@ filterList.forEach(function (list) {
     var activeList = document.querySelector('.active-list');
     activeList.classList.remove('active-list');
     list.classList.add('active-list');
-    listAttr = list.getAttribute('data-list');
+    var listAttr = list.getAttribute('data-list');
     galleryList.forEach(function (imgList) {
       var imgAttr = imgList.getAttribute('data-img');
       if (listAttr === imgAttr || listAttr === 'all') {

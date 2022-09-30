@@ -82,6 +82,12 @@ sub { bottom: -.25em; }
 .cf { *zoom: 1; }
 
 /*for all*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   box-sizing: border-box;
   font-family: sans-serif;
@@ -104,51 +110,38 @@ li {
   margin: 0 auto;
 }
 /*=================================
-  Header styling starts here
-=================================*/
-
-
-
-
-
-
-/*=================================
-  Header styling ends here
-=================================*/  
-
-/*=================================
   main styling starts here
 =================================*/
+body { background: rgb(0,0,0); }
 
+.filter-container { padding: 30px 0; }
 
+.filter-items { 
+  padding: 20px 0 30px 0;
+  display: flex;
+  gap: 10px;
+}
 
+.filter-link {
+  padding: 5px 15px;
+  border-radius: 2px;
+  color: rgb(255,255,255);
+  text-transform: capitalize;
+  transition: all 0.5s ease;
+}
 
+.active-list .filter-link { background: rgb(143,208,166); }
 
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.gallery-list img { padding: 2px; }
+
+.hide-content { display: none; }
 
 
 /*=================================
   main styling ends here
-=================================*/
-
-/*=================================
-  footer styling starts here
 =================================*/ 
-
-
-
-
-
-
-
- /*=================================
-  footer styling ends here
-=================================*/ 
-
-/*media query starts*/
-/*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
-
-
-
-}  

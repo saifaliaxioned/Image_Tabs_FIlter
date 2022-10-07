@@ -140,21 +140,20 @@ body { background: rgb(0,0,0); }
 }
 
 .gallery-list img { padding: 2px; }
-.hide-content { display: none; }
 
 .modalDiv {
   width: 100%;
   height: 100vh;
-  position: absolute;
+  padding: 0 1%;
+  position: fixed;
   top: 0;
-  left: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background: rgb(0,0,0,0.3);
 }
-
+.removeScroll { overflow-y: hidden; }
 .cancel-btn { 
   width: 100%;
   padding: 17px 0;
@@ -170,15 +169,16 @@ body { background: rgb(0,0,0); }
   content: '\f00d';
   position: absolute;
   top: 0;
-  right: 0;
+  right: 10px;
   font-family: 'FontAwesome';
   font-size: 35px;
   text-indent: 0;
 }
 
 .modal-img {
+  width: 90%;
+  max-height: 70vh;
   display: flex;
-  min-height: 70vh;
   transition: all 0.5s ease;
 }
 
@@ -186,6 +186,8 @@ body { background: rgb(0,0,0); }
   object-fit: cover;
 }
 
+.hide-content { display: none; }
+
 /*=================================
-  main styling ends here
+main styling ends here
 =================================*/ 

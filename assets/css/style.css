@@ -114,6 +114,8 @@ li {
 =================================*/
 body { background: rgb(0,0,0); }
 
+.imageFilter .wrapper { position: relative; }
+
 .filter-container { padding: 30px 0; }
 
 .filter-items { 
@@ -138,9 +140,51 @@ body { background: rgb(0,0,0); }
 }
 
 .gallery-list img { padding: 2px; }
-
 .hide-content { display: none; }
 
+.modalDiv {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(0,0,0,0.3);
+}
+
+.cancel-btn { 
+  width: 100%;
+  padding: 17px 0;
+  position: relative;
+}
+
+.cancel-btn a {
+  color: rgb(255,255,255);
+  text-indent: -9999px;
+}
+
+.cancel-btn a::before {
+  content: '\f00d';
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-family: 'FontAwesome';
+  font-size: 35px;
+  text-indent: 0;
+}
+
+.modal-img {
+  display: flex;
+  min-height: 70vh;
+  transition: all 0.5s ease;
+}
+
+.modal-img img {
+  object-fit: cover;
+}
 
 /*=================================
   main styling ends here

@@ -30,12 +30,11 @@ filterList.forEach(function (list) {
 galleryImage.forEach(function (image, i) {
   image.index = i;
   image.addEventListener('click', function () {
-    currentIndex = image.index
+    currentIndex = image.index;
     var imageSource = image.src;
     modalImage.src = imageSource;
     modal.classList.remove('hide-content');
     document.documentElement.classList.add('removeScroll');
-    image.parentElement.parentElement.classList.add('active-list');
   });
 });
 
@@ -63,10 +62,7 @@ prevBtn.addEventListener('click', function () {
   slider();
 });
 function slider() {
-  activeList.classList.remove('active-list');
-  galleryList[currentIndex].classList.add('active-list');
   modalImage.src = galleryImage[currentIndex].src;
-  console.log(modalImage);
 }
 
 // Escape key function

@@ -7,11 +7,11 @@ var modalImage = document.querySelector('.modalDiv img');
 var cancelBtn = document.querySelector('.cancel-btn a');
 var prevBtn = document.querySelector('.prevBtn a');
 var nextBtn = document.querySelector('.nextBtn a');
-var activeList = document.querySelector('.active-list');
 var currentIndex;
 
 filterList.forEach(function (list) {
   list.addEventListener('click', function () {
+    var activeList = document.querySelector('.active-list');
     activeList.classList.remove('active-list');
     list.classList.add('active-list');
     var listAttr = list.getAttribute('data-list');
